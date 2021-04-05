@@ -177,7 +177,7 @@ main div{
     width: 90%;
     min-width: 288px;
     max-width: 500px;
-    height: 350px;
+    height: auto;
 
     border-radius: 15px;
 
@@ -225,6 +225,7 @@ main div{
     align-items: center;
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
 
     /* border: 1px solid; */
 }
