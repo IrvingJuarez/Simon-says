@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/icons/chromatic.svg">
+</head>
+<body>
+    <main>
+        <div class="main__score-div" id="main__score-div">
+            Score: <span id="score">0</span>
+        </div>
+        <div class="main__board-div">
+            <div class="side1" id="one" data-number="one"></div>
+            <div class="side2" id="two" data-number="two"></div>
+            <div class="side3" id="three" data-number="three"></div>
+            <div class="side4" id="four" data-number="four"></div>
+
+            <button id="button-start" class="button-start" onclick="startGame()">
+                Start!
+            </button>
+
+            <button id="hidenButton" class="hidenButton"">
+                ...
+            </button>
+        </div>
+        <div class="status">
+            <div class="lives">
+                <div class="live" id="live1"></div>
+                <div class="live" id="live2"></div>
+                <div class="live" id="live3"></div>
+                <div class="live" id="live4"></div>
+                <div class="live" id="live5"></div>
+            </div>
+        </div>
+        <button class="help" id="help" onclick="help()"></button>
+        <section class="hidenPanel" id="hidenPanel">
+            <article class="panelHeader">
+                <button onclick="hideHelp()">X</button>
+            </article>
+            <article class="howPlay">
+                <h2>How to play?</h2>
+                <p>In this game you have to remember the order of the color highlight.</p>
+                <p>There is a maximum of 10 levels. So, the maximum pattern will highligh 10 times the colors.</p>
+                <p>The way how you can win is when you reach 125 points. And you lose when there are no more hearts.</p>
+                <p>Give me your feedback in the links below.</p>
+            </article>
+            <article class="contact">
+                <a href="https://twitter.com/juarez1_irving" class="twitter"></a>
+                <a href="https://www.linkedin.com/in/irving-juarez-36a973187/" class="linkedin"></a>
+                <a href="https://github.com/IrvingJuarez" class="github"></a>
+            </article>
+        </section>
+        <section class="resultPanel" id="resultPanel">
+            <article class="resultPanelHeader">
+                <button onclick="hideResult()">X</button>
+            </article>
+            <h2 id="resultText">No result yet.</h2>
+            <p>Give me your feedback below.</p>
+            <article class="contact">
+                <a href="https://twitter.com/juarez1_irving" class="twitter"></a>
+                <a href="https://www.linkedin.com/in/irving-juarez-36a973187/" class="linkedin"></a>
+                <a href="https://github.com/IrvingJuarez" class="github"></a>
+            </article>
+        </section>
+    </main>
+
+    <script src="./file.js"></script>
+</body>
+</html>
